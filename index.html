@@ -1,0 +1,568 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta charset="utf-8" />
+    <link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect" />
+    <link
+      as="style"
+      href="https://fonts.googleapis.com/css2?display=swap&amp;family=Inter%3Awght%40400%3B500%3B700%3B900&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900"
+      onload="this.rel='stylesheet'"
+      rel="stylesheet"
+    />
+    <title>Mahadi Hasan - Frontend Developer</title>
+    <link href="data:image/x-icon;base64," rel="icon" type="image/x-icon" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <style type="text/tailwindcss">
+      :root {
+        --primary-green: #007a55;
+        --soft-yellow: #fff085;
+        --dark-bg: #101816;
+        --card-bg: #1a2422;
+        --text-light: #e5e7eb;
+        --text-muted: #9abcb2;
+      }
+      .group:hover .group-hover\:block {
+        display: block;
+      }
+    </style>
+  </head>
+  <body
+    class="bg-[var(--dark-bg)] text-[var(--text-light)]"
+    style="font-family: Inter, &quot;Noto Sans&quot;, sans-serif"
+  >
+    <div
+      class="relative flex size-full min-h-screen flex-col overflow-x-hidden"
+    >
+      <header
+        class="sticky top-0 z-50 flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#273a34] bg-[var(--dark-bg)]/80 px-10 py-4 backdrop-blur-sm"
+      >
+        <div class="flex items-center gap-4">
+          <svg
+            fill="none"
+            height="24"
+            viewBox="0 0 48 48"
+            width="24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M44 4H30.6666V17.3334H17.3334V30.6666H4V44H44V4Z"
+              fill="var(--primary-green)"
+            ></path>
+          </svg>
+          <h2 class="text-xl font-bold tracking-tight">Mahadi Hasan</h2>
+        </div>
+        <nav class="hidden md:flex items-center gap-8">
+          <a
+            class="text-sm font-medium transition-colors hover:text-[var(--primary-green)]"
+            href="#about"
+            >About</a
+          >
+          <a
+            class="text-sm font-medium transition-colors hover:text-[var(--primary-green)]"
+            href="#journey"
+            >Journey</a
+          >
+          <a
+            class="text-sm font-medium transition-colors hover:text-[var(--primary-green)]"
+            href="#projects"
+            >Projects</a
+          >
+          <a
+            class="text-sm font-medium transition-colors hover:text-[var(--primary-green)]"
+            href="#skills"
+            >Skills</a
+          >
+          <a
+            class="text-sm font-medium transition-colors hover:text-[var(--primary-green)]"
+            href="#contact"
+            >Contact</a
+          >
+        </nav>
+        <div class="flex items-center gap-3">
+          <a
+            class="flex h-10 w-10 cursor-pointer items-center justify-center overflow-hidden rounded-full bg-[#273a34] text-white transition-colors hover:bg-[var(--primary-green)]"
+            href="#"
+          >
+            <svg
+              fill="currentColor"
+              height="20px"
+              viewBox="0 0 256 256"
+              width="20px"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M208.31,75.68A59.78,59.78,0,0,0,202.93,28,8,8,0,0,0,196,24a59.75,59.75,0,0,0-48,24H124A59.75,59.75,0,0,0,76,24a8,8,0,0,0-6.93,4,59.78,59.78,0,0,0-5.38,47.68A58.14,58.14,0,0,0,56,104v8a56.06,56.06,0,0,0,48.44,55.47A39.8,39.8,0,0,0,96,192v8H72a24,24,0,0,1-24-24A40,40,0,0,0,8,136a8,8,0,0,0,0,16,24,24,0,0,1,24,24,40,40,0,0,0,40,40H96v16a8,8,0,0,0,16,0V192a24,24,0,0,1,48,0v40a8,8,0,0,0,16,0V192a39.8,39.8,0,0,0-8.44-24.53A56.06,56.06,0,0,0,216,112v-8A58.14,58.14,0,0,0,208.31,75.68ZM200,112a40,40,0,0,1-40,40H112a40,40,0,0,1-40-40v-8a41.74,41.74,0,0,1,6.9-22.48A8,8,0,0,0,80,73.83a43.81,43.81,0,0,1,.79-33.58,43.88,43.88,0,0,1,32.32,20.06A8,8,0,0,0,119.82,64h32.35a8,8,0,0,0,6.74-3.69,43.87,43.87,0,0,1,32.32-20.06A43.81,43.81,0,0,1,192,73.83a8.09,8.09,0,0,0,1,7.65A41.72,41.72,0,0,1,200,104Z"
+              ></path>
+            </svg>
+          </a>
+          <a
+            class="flex h-10 w-10 cursor-pointer items-center justify-center overflow-hidden rounded-full bg-[#273a34] text-white transition-colors hover:bg-[var(--primary-green)]"
+            href="#"
+          >
+            <svg
+              fill="currentColor"
+              height="20px"
+              viewBox="0 0 256 256"
+              width="20px"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M216,24H40A16,16,0,0,0,24,40V216a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V40A16,16,0,0,0,216,24Zm0,192H40V40H216V216ZM96,112v64a8,8,0,0,1-16,0V112a8,8,0,0,1,16,0Zm88,28v36a8,8,0,0,1-16,0V140a20,20,0,0,0-40,0v36a8,8,0,0,1-16,0V112a8,8,0,0,1,15.79-1.78A36,36,0,0,1,184,140ZM100,84A12,12,0,1,1,88,72,12,12,0,0,1,100,84Z"
+              ></path>
+            </svg>
+          </a>
+        </div>
+      </header>
+
+      <main class="flex-1">
+        <!-- hero section -->
+        <section
+          class="flex min-h-screen items-center justify-center px-4 py-20 text-center md:px-10"
+          id="hero"
+        >
+          <div class="max-w-4xl">
+            <div class="flex flex-col items-center gap-8 md:flex-row">
+              <div class="w-48 h-48 md:w-64 md:h-64 flex-shrink-0">
+                <div
+                  class="w-full h-full rounded-full bg-center bg-no-repeat bg-cover border-4 border-[var(--primary-green)] shadow-lg"
+                  style="
+                    background-image: url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuBKHCHmglBMJvEjPJv39qcUvnU8A0b08WqRgzgaS8GqURl6RVr-oEfJ2FvS6AOfJ6IaULoWrxEOMHoGgpajrSqo3ORpYGVeA_ChS1G66b59oBNIi4y275_doOu2OBzIp7ZhWzuMAHrektQa53GMX8xGlLtFdkhKOC_Qo4pGp4S0S7FabaTg45vlowIbhS9rFkYVaoi_-7VwVQcsQ_hcGDLyt1MlCU0cQPcJn0gcxCjVTNNdG-OFsLJR9akUN6GbpO1ofdu0-2UhHqlO&quot;);
+                  "
+                ></div>
+              </div>
+              <div class="flex flex-col gap-4 text-center md:text-left">
+                <h1
+                  class="text-4xl font-black tracking-tighter sm:text-5xl md:text-6xl"
+                >
+                  Hi, I'm
+                  <span class="text-[var(--primary-green)]">Mahadi Hasan</span>
+                </h1>
+                <p class="max-w-xl text-lg text-[var(--text-muted)] md:text-xl">
+                  A Frontend Developer with a passion for creating beautiful and
+                  functional web experiences. I specialize in modern web
+                  technologies and strive to deliver high-quality, user-centric
+                  solutions.
+                </p>
+                <div class="mt-4 flex gap-4 justify-center md:justify-start">
+                  <a
+                    class="inline-flex h-12 items-center justify-center rounded-lg bg-[var(--primary-green)] px-6 text-base font-bold text-white shadow-md transition-transform hover:scale-105"
+                    href="#projects"
+                  >
+                    View My Work
+                  </a>
+                  <a
+                    class="inline-flex h-12 items-center justify-center rounded-lg border border-[#273a34] bg-[var(--card-bg)] px-6 text-base font-bold text-white shadow-md transition-colors hover:bg-[#273a34]"
+                    href="#contact"
+                  >
+                    Get In Touch
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- about me -->
+        <section class="py-20 px-4 md:px-10 bg-[var(--card-bg)]" id="about">
+          <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-2">
+              About
+              <span class="text-[var(--primary-green)]">Me</span>
+            </h2>
+            <div class="w-20 h-1 bg-[var(--soft-yellow)] mx-auto mb-10"></div>
+            <p
+              class="text-center text-lg text-[var(--text-muted)] leading-relaxed"
+            >
+              I am a dedicated frontend developer with over 2 years of
+              professional experience in building responsive and interactive web
+              applications. My expertise includes HTML, CSS, JavaScript, and
+              modern frameworks like React and NextJs. I am passionate about
+              clean code, user experience, and continuous learning, always
+              seeking new challenges to grow my skills.
+            </p>
+          </div>
+        </section>
+
+        <!-- experience -->
+        <section class="py-20 px-4 md:px-10" id="journey">
+          <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-2">
+              Professional
+              <span class="text-[var(--primary-green)]">Journey</span>
+            </h2>
+            <div class="w-20 h-1 bg-[var(--soft-yellow)] mx-auto mb-10"></div>
+            <div class="relative">
+              <div
+                class="absolute left-1/2 -translate-x-1/2 w-0.5 h-full bg-[#273a34]"
+              ></div>
+              <div class="space-y-12">
+                <div class="relative flex items-start gap-8">
+                  <div
+                    class="absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 w-4 h-4 rounded-full bg-[var(--primary-green)] border-2 border-[var(--dark-bg)]"
+                  ></div>
+                  <div class="w-1/2 text-right pr-16">
+                    <div class="p-4 bg-[var(--card-bg)] rounded-lg shadow-lg">
+                      <p class="text-sm text-[var(--text-muted)]">
+                        Sep 24 - Present
+                      </p>
+                      <h3
+                        class="text-xl font-bold mt-1 text-[var(--text-light)]"
+                      >
+                        Frontend Developer
+                      </h3>
+                      <p class="text-[var(--text-muted)] mt-1">Texbazar Ltd.</p>
+                      <p class="text-sm text-[var(--text-light)] mt-2">
+                        Built pixel-perfect UIs from Figma designs using React
+                        and Next.js, managing complex layouts with global state
+                        handled by Redux and Zustand. Implemented form handling
+                        with react-hook-form, Zod, and server actions, along
+                        with real-time chat and secure payment integrations like
+                        AmarPay.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="w-1/2"></div>
+                </div>
+                <div class="relative flex items-start gap-8">
+                  <div
+                    class="absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 w-4 h-4 rounded-full bg-[var(--primary-green)] border-2 border-[var(--dark-bg)]"
+                  ></div>
+                  <div class="w-1/2"></div>
+                  <div class="w-1/2 pl-16">
+                    <div class="p-4 bg-[var(--card-bg)] rounded-lg shadow-lg">
+                      <p class="text-sm text-[var(--text-muted)]">
+                        Mar 24 - Aug 24
+                      </p>
+                      <h3
+                        class="text-xl font-bold mt-1 text-[var(--text-light)]"
+                      >
+                        Node.js Developer
+                      </h3>
+                      <p class="text-[var(--text-muted)] mt-1">Skyland Web</p>
+                      <p class="text-sm text-[var(--text-light)] mt-2">
+                        Built REST APIs with Express.js using MVC patterns and
+                        ES modules, managing databases with MongoDB and
+                        PostgreSQL while collaborating through Postman for API
+                        documentation. Implemented JWT authentication with
+                        role-based security and deployed applications on Vercel,
+                        Render, and Docker hosts.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="relative flex items-start gap-8">
+                  <div
+                    class="absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 w-4 h-4 rounded-full bg-[var(--primary-green)] border-2 border-[var(--dark-bg)]"
+                  ></div>
+                  <div class="w-1/2 text-right pr-16">
+                    <div class="p-4 bg-[var(--card-bg)] rounded-lg shadow-lg">
+                      <p class="text-sm text-[var(--text-muted)]">
+                        2023 - 2024
+                      </p>
+                      <h3
+                        class="text-xl font-bold mt-1 text-[var(--text-light)]"
+                      >
+                        Full stack Developer
+                      </h3>
+                      <p class="text-[var(--text-muted)] mt-1">China Goods</p>
+                      <p class="text-sm text-[var(--text-light)] mt-2">
+                        Developed a full-stack client project by building the
+                        frontend site, backend APIs, and an admin dashboard.
+                        Implemented REST APIs with Express.js,
+                      </p>
+                    </div>
+                  </div>
+                  <div class="w-1/2"></div>
+                </div>
+                <div class="relative flex items-start gap-8">
+                  <div
+                    class="absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 w-4 h-4 rounded-full bg-[var(--soft-yellow)] border-2 border-[var(--dark-bg)]"
+                  ></div>
+                  <div class="w-1/2"></div>
+                  <div class="w-1/2 pl-16">
+                    <div class="p-4 bg-[var(--card-bg)] rounded-lg shadow-lg">
+                      <p class="text-sm text-[var(--text-muted)]">
+                        2023 - 2024
+                      </p>
+                      <h3
+                        class="text-xl font-bold mt-1 text-[var(--text-light)]"
+                      >
+                        Frontend Developer
+                      </h3>
+                      <p class="text-[var(--text-muted)] mt-1">Ladies Sign</p>
+                      <p class="text-sm text-[var(--text-light)] mt-2">
+                        Worked as a Frontend Developer and built a responsive,
+                        user-friendly dashboard using React/Next.js with
+                        optimized UI/UX and seamless API integration.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- projects -->
+        <section class="py-20 px-4 md:px-10 bg-[var(--card-bg)]" id="projects">
+          <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-2">
+              My
+              <span class="text-[var(--primary-green)]">Projects</span>
+            </h2>
+            <div class="w-20 h-1 bg-[var(--soft-yellow)] mx-auto mb-10"></div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+              <a
+                href="https://culinary-haven-xi.vercel.app/"
+                target="_blank"
+                class="group relative flex flex-col gap-3 rounded-lg bg-[var(--card-bg)] p-4 shadow-lg transition-transform hover:-translate-y-2 overflow-hidden"
+              >
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-md"
+                  style="background-image: url(./images/resturant.png)"
+                ></div>
+                <div
+                  class="absolute inset-0 bg-black/70 flex flex-col justify-center items-center p-4 opacity-0 group-hover:opacity-100 transition-opacity"
+                >
+                  <h3 class="text-xl font-bold text-[var(--soft-yellow)]">
+                    The Culinary Haven
+                  </h3>
+                  <p class="text-center text-sm text-[var(--text-light)] mt-2">
+                    A premium restaurant platform featuring online menu
+                    browsing, reservations, and a seamless dining experience
+                  </p>
+                  <div class="mt-4 text-xs text-[var(--primary-green)]">
+                    React / NextJs / Tailwind
+                  </div>
+                </div>
+                <div class="p-2">
+                  <p class="text-lg font-semibold">The Culinary Haven</p>
+                  <p class="text-sm text-[var(--text-muted)]">
+                    A full-featured Premium Restaurant website
+                  </p>
+                </div>
+              </a>
+
+              <div
+                class="group relative flex flex-col gap-3 rounded-lg bg-[var(--card-bg)] p-4 shadow-lg transition-transform hover:-translate-y-2 overflow-hidden"
+              >
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-md"
+                  style="background-image: url(./images/magic.png)"
+                ></div>
+                <div
+                  class="absolute inset-0 bg-black/70 flex flex-col justify-center items-center p-4 opacity-0 group-hover:opacity-100 transition-opacity"
+                >
+                  <h3 class="text-xl font-bold text-[var(--soft-yellow)]">
+                    Magic Tools - Free Developer Utilities
+                  </h3>
+                  <p class="text-center text-sm text-[var(--text-light)] mt-2">
+                    Essential free developer tools including password generator,
+                    QR code creator, unit converters, and JSON formatter.
+                  </p>
+                  <div class="mt-4 text-xs text-[var(--primary-green)]">
+                    React / NextJs / Tailwind
+                  </div>
+                </div>
+                <div class="p-2">
+                  <p class="text-lg font-semibold">
+                    Magic Tools - Free Developer Utilities
+                  </p>
+                  <p class="text-sm text-[var(--text-muted)]">
+                    Essential free developer tools including password generator,
+                    QR code creator, unit converters, and JSON formatter.
+                  </p>
+                </div>
+              </div>
+
+              <div
+                class="group relative flex flex-col gap-3 rounded-lg bg-[var(--card-bg)] p-4 shadow-lg transition-transform hover:-translate-y-2 overflow-hidden"
+              >
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-md"
+                  style="
+                    background-image: url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuAUuJX9_JqanF9HBibJbwpMeRFmKUBTapaD6l1JS8jwzEEfTYBJohAZ-3DBClSL-8T97wPuuZpm4T5xAgOVZjF69dQORYBSbALC4LdmMsSz2SEOzD-a9Ho0a-PyQE_AO-Z6HEUH8XPEI0ZNmjeDDrK8pF7TOAtGIMDJlj2rVGyOZqD9yPouEyuwdCIsufEGhiRd1xU6lkaugVGRZhElqz6Mo_Lajff-PrpGEsAD98p4AUqU_YZyHZ2LJLSxykO5ZnWBCSetjvPZpOeW&quot;);
+                  "
+                ></div>
+                <div
+                  class="absolute inset-0 bg-black/70 flex flex-col justify-center items-center p-4 opacity-0 group-hover:opacity-100 transition-opacity"
+                >
+                  <h3 class="text-xl font-bold text-[var(--soft-yellow)]">
+                    Dashboard Application
+                  </h3>
+                  <p class="text-center text-sm text-[var(--text-light)] mt-2">
+                    A dashboard application for managing user data and
+                    visualizing analytics with interactive charts.
+                  </p>
+                  <div class="mt-4 text-xs text-[var(--primary-green)]">
+                    Vue.js / Chart.js
+                  </div>
+                </div>
+                <div class="p-2">
+                  <p class="text-lg font-semibold">Dashboard Application</p>
+                  <p class="text-sm text-[var(--text-muted)]">
+                    A dashboard for data management and analytics.
+                  </p>
+                </div>
+              </div>
+
+              <div
+                class="group relative flex flex-col gap-3 rounded-lg bg-[var(--card-bg)] p-4 shadow-lg transition-transform hover:-translate-y-2 overflow-hidden"
+              >
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-md"
+                  style="
+                    background-image: url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuAgzTyQSvWG9gwUc1G3ezWTs_e0_HbGPL3SPEzjIS4XHWxw0DhCvS3VLpCw7QQMWLK0T7xXd2srZsJ3MxQApCqDF9y7u0eZ9DXsqGGg0IQxqT7WQPY4HgjEfvpexLLYNne3JV38zWsHptju0rKPL-HrA51YOQeErUHXfDZnIsSP4v76VjVWox2T5Mc1WSC9hSKJ_VezkQHvLEYyJom99eLY-DF9s6cOvm9Ay2SJD1VGsO-T4XELHSzfFNFUsbTGWR0IdaPIIV7zEYPz&quot;);
+                  "
+                ></div>
+                <div
+                  class="absolute inset-0 bg-black/70 flex flex-col justify-center items-center p-4 opacity-0 group-hover:opacity-100 transition-opacity"
+                >
+                  <h3 class="text-xl font-bold text-[var(--soft-yellow)]">
+                    Mobile App Landing Page
+                  </h3>
+                  <p class="text-center text-sm text-[var(--text-light)] mt-2">
+                    A landing page for a mobile application with a focus on user
+                    engagement and conversion.
+                  </p>
+                  <div class="mt-4 text-xs text-[var(--primary-green)]">
+                    HTML / CSS / JavaScript
+                  </div>
+                </div>
+                <div class="p-2">
+                  <p class="text-lg font-semibold">Mobile App Landing Page</p>
+                  <p class="text-sm text-[var(--text-muted)]">
+                    A landing page to drive app downloads.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- skills -->
+        <section class="py-20 px-4 md:px-10" id="skills">
+          <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-2">
+              Professional
+              <span class="text-[var(--primary-green)]">Skills</span>
+            </h2>
+            <div class="w-20 h-1 bg-[var(--soft-yellow)] mx-auto mb-10"></div>
+            <div class="flex flex-wrap justify-center gap-4">
+              <div
+                class="flex h-10 items-center justify-center gap-x-2 rounded-lg bg-[#273a34] px-5 text-sm font-medium transition-colors hover:bg-[var(--primary-green)]"
+              >
+                HTML
+              </div>
+              <div
+                class="flex h-10 items-center justify-center gap-x-2 rounded-lg bg-[#273a34] px-5 text-sm font-medium transition-colors hover:bg-[var(--primary-green)]"
+              >
+                CSS
+              </div>
+              <div
+                class="flex h-10 items-center justify-center gap-x-2 rounded-lg bg-[#273a34] px-5 text-sm font-medium transition-colors hover:bg-[var(--primary-green)]"
+              >
+                JavaScript
+              </div>
+              <div
+                class="flex h-10 items-center justify-center gap-x-2 rounded-lg bg-[#273a34] px-5 text-sm font-medium transition-colors hover:bg-[var(--primary-green)]"
+              >
+                React
+              </div>
+              <div
+                class="flex h-10 items-center justify-center gap-x-2 rounded-lg bg-[#273a34] px-5 text-sm font-medium transition-colors hover:bg-[var(--primary-green)]"
+              >
+                NextJs
+              </div>
+              <div
+                class="flex h-10 items-center justify-center gap-x-2 rounded-lg bg-[#273a34] px-5 text-sm font-medium transition-colors hover:bg-[var(--primary-green)]"
+              >
+                Zustand
+              </div>
+              <div
+                class="flex h-10 items-center justify-center gap-x-2 rounded-lg bg-[#273a34] px-5 text-sm font-medium transition-colors hover:bg-[var(--primary-green)]"
+              >
+                Node.js
+              </div>
+              <div
+                class="flex h-10 items-center justify-center gap-x-2 rounded-lg bg-[#273a34] px-5 text-sm font-medium transition-colors hover:bg-[var(--primary-green)]"
+              >
+                Express.js
+              </div>
+              <div
+                class="flex h-10 items-center justify-center gap-x-2 rounded-lg bg-[#273a34] px-5 text-sm font-medium transition-colors hover:bg-[var(--primary-green)]"
+              >
+                MongoDB
+              </div>
+              <div
+                class="flex h-10 items-center justify-center gap-x-2 rounded-lg bg-[#273a34] px-5 text-sm font-medium transition-colors hover:bg-[var(--primary-green)]"
+              >
+                SQL
+              </div>
+              <div
+                class="flex h-10 items-center justify-center gap-x-2 rounded-lg bg-[#273a34] px-5 text-sm font-medium transition-colors hover:bg-[var(--primary-green)]"
+              >
+                Git
+              </div>
+              <div
+                class="flex h-10 items-center justify-center gap-x-2 rounded-lg bg-[#273a34] px-5 text-sm font-medium transition-colors hover:bg-[var(--primary-green)]"
+              >
+                Responsive Design
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- contact me -->
+        <section class="py-20 px-4 md:px-10 bg-[var(--card-bg)]" id="contact">
+          <div class="max-w-xl mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-2">
+              Contact
+              <span class="text-[var(--primary-green)]">Me</span>
+            </h2>
+            <div class="w-20 h-1 bg-[var(--soft-yellow)] mx-auto mb-10"></div>
+            <form class="flex flex-col gap-6">
+              <label class="flex flex-col gap-2">
+                <span class="text-base font-medium">Name</span>
+                <input
+                  class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-white focus:ring-2 focus:ring-[var(--primary-green)] border-none bg-[#273a34] h-12 placeholder:text-[#9abcb2] p-3 text-base font-normal"
+                  placeholder="Your Name"
+                  type="text"
+                />
+              </label>
+              <label class="flex flex-col gap-2">
+                <span class="text-base font-medium">Email</span>
+                <input
+                  class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-white focus:ring-2 focus:ring-[var(--primary-green)] border-none bg-[#273a34] h-12 placeholder:text-[#9abcb2] p-3 text-base font-normal"
+                  placeholder="Your Email"
+                  type="email"
+                />
+              </label>
+              <label class="flex flex-col gap-2">
+                <span class="text-base font-medium">Message</span>
+                <textarea
+                  class="form-textarea flex w-full min-w-0 flex-1 resize-y overflow-hidden rounded-lg text-white focus:ring-2 focus:ring-[var(--primary-green)] border-none bg-[#273a34] min-h-36 placeholder:text-[#9abcb2] p-3 text-base font-normal"
+                  placeholder="Your Message"
+                ></textarea>
+              </label>
+              <button
+                class="flex min-w-[84px] cursor-pointer items-center justify-center self-start overflow-hidden rounded-lg h-12 px-6 bg-[var(--primary-green)] text-white text-base font-bold shadow-md transition-transform hover:scale-105"
+                type="submit"
+              >
+                Send Message
+              </button>
+            </form>
+          </div>
+        </section>
+      </main>
+
+      <!-- footer -->
+      <footer
+        class="border-t border-solid border-b-[#273a34] bg-[var(--dark-bg)] px-10 py-6 text-center text-sm text-[var(--text-muted)]"
+      >
+        <p>© 2025 mahadi hasan. All rights reserved.</p>
+      </footer>
+    </div>
+  </body>
+</html>
